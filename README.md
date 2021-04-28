@@ -1,4 +1,4 @@
-# WIP
+# Eldorado
 
 **Número da Lista**: 16<br>
 **Conteúdo da Disciplina**: Programação Dinâmica<br>
@@ -10,7 +10,7 @@
 | 16/0144485  |  [Saleh Nazih Abdel Kader](https://github.com/devsalula) |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto é baseado no exercício [1645](https://www.urionlinejudge.com.br/judge/pt/problems/view/1645) do URI.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
