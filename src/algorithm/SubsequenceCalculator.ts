@@ -4,7 +4,7 @@ export class SubsequenceCalculator {
 
     generateRandomArraySequence(): number[] {
         let randomList = [];
-        const randomListSize = Math.floor(Math.random() * 10);
+        const randomListSize = Math.floor(Math.random() * 10) + 1;
         for (let i = 0; i < randomListSize; i++) {
             const randomValue = Math.floor(Math.random() * 100);
             randomList.push(randomValue);
@@ -13,7 +13,7 @@ export class SubsequenceCalculator {
     }
 
     generateRandomSubsequenceSize(): number {
-        return Math.floor(Math.random() * 5);
+        return Math.floor(Math.random() * 5) + 1;
     }
 
     calculateAnswers(randomList: number[], subsequenceSize: number): AnswerType {

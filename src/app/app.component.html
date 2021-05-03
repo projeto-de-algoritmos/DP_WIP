@@ -3,4 +3,22 @@
 
 <p class="description">Descrição</p>
 
+<button (click)="getRandomList()" *ngIf="buttonDisapear">Sortear</button>
+
+<div class="sequence-box" *ngIf="!buttonDisapear">
+    <span>Sequência: {{ randomList }}</span>
+    <span>Tamanho da Subsequência: {{ randomSubsequenceSize }}</span>
+</div>
+
+<!-- <div class="wrap-cards" *ngIf="!buttonDisapear">
+    <mat-card class="inline-block" *ngFor="let order of orders">
+      <mat-card-header>
+        <mat-card-title></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{answer}</p>
+      </mat-card-content>
+    </mat-card>
+</div> -->
+
 <router-outlet></router-outlet>
