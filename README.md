@@ -15,8 +15,15 @@ Em seu passeio em Las Vegas, você se depara com um dos cassinos mais famosos da
 Esse problema foi resolvido através da maior subsequência crescente de Programação Dinâmica.
 O projeto é baseado no exercício [1645](https://www.urionlinejudge.com.br/judge/pt/problems/view/1645) do URI.
 
+Você pode acessar o Link: https://eldorado-paa.netlify.app/
+
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![Captura de tela de 2021-05-03 22-58-14](https://user-images.githubusercontent.com/35435199/116953265-353f1b00-ac63-11eb-9bb5-9f1303bdbcfc.png)
+
+![Captura de tela de 2021-05-03 22-58-21](https://user-images.githubusercontent.com/35435199/116953277-3c662900-ac63-11eb-908d-423d8a534f5a.png)
+
+![Captura de tela de 2021-05-03 22-58-49](https://user-images.githubusercontent.com/35435199/116953290-42f4a080-ac63-11eb-96a4-db8ff62e8ea3.png)
+
 
 ## Instalação 
 **Linguagem**: Typescript<br>
@@ -39,4 +46,4 @@ Agora tudo o que precisa fazer é instalar as depêndencias (`npm install`) e ro
 `ng serve`
 
 ## Uso 
-Para o uso do projeto basta seguir as instruções para poder rodar o front. 
+Para o uso do projeto basta seguir as instruções para poder rodar o front. Ou você pode acessar o link: https://eldorado-paa.netlify.app/
