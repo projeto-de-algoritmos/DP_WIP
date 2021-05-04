@@ -9,7 +9,10 @@
 | 15/0120702  |  [Calebe Rios de Sousa Mendes](https://github.com/CalebeRios) |
 | 16/0144485  |  [Saleh Nazih Abdel Kader](https://github.com/devsalula) |
 
-## Sobre 
+## Sobre
+Em seu passeio em Las Vegas, você se depara com um dos cassinos mais famosos da região, o ElDorado. Ao entrar no cassino você se vê logo possuído pelo jogo de apostas `Descubra a quantidade de Subsequências`. O jogo não é muito complexo, dado uma sequência aleatória de números e o tamanho X de uma subsequência você deverá descobrir apostar quantas subsequência X cabem dentro da sequência dada.
+
+Esse problema foi resolvido através da maior subsequência crescente de Programação Dinâmica.
 O projeto é baseado no exercício [1645](https://www.urionlinejudge.com.br/judge/pt/problems/view/1645) do URI.
 
 ## Screenshots
@@ -37,6 +40,3 @@ Agora tudo o que precisa fazer é instalar as depêndencias (`npm install`) e ro
 
 ## Uso 
 Para o uso do projeto basta seguir as instruções para poder rodar o front. 
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
