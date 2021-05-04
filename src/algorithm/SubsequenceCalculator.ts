@@ -4,7 +4,7 @@ export class SubsequenceCalculator {
 
     generateRandomArraySequence(): number[] {
         let randomList = [];
-        const randomListSize = Math.floor(Math.random() * 10) + 1;
+        const randomListSize = Math.floor(Math.random() * 10) + 5;
         for (let i = 0; i < randomListSize; i++) {
             const randomValue = Math.floor(Math.random() * 100);
             randomList.push(randomValue);
@@ -29,11 +29,13 @@ export class SubsequenceCalculator {
 
     private calculateLIS(randomList: number[], subsequenceSize: number): number {
         const randomListSize = randomList.length;
-        let memoization = new Array(randomListSize);
+        let memoization = [];
 		for(let i = 0; i < randomListSize; i++) {
+            let save = []
 			for(let j = 0; j < subsequenceSize; j++) {
-				memoization[i][j]=0;
+                save.push(0);
             }
+            memoization.push(save);
         }
 		for(let i = 0; i < randomListSize; i++) {
 			memoization[i][0]=1;
@@ -42,7 +44,7 @@ export class SubsequenceCalculator {
 			for(let i = 0; i < randomListSize; i++) {
 				for(let j = 0; j < i; j++) {
 					if(randomList[i] > randomList[j]) {
-						memoization[i][l-1]+=memoization[j][l-2];
+						memoization[i][l-1] += memoization[j][l-2];
                     }
                 }
             }
