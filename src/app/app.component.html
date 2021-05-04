@@ -2,9 +2,16 @@
 <div class="casino-box">
     <h1 class="title">Cassino Eldorado</h1>
 
-    <p class="description">O Cassino Eldorado é o Cassino mais alegre de toda Programalandia</p>
+    <p class="description">Em seu passeio em Las Vegas, você se depara com um dos cassinos mais famosos da região, o ElDorado. Ao entrar no cassino você se vê logo possuído pelo jogo de apostas Descubra a quantidade de Subsequências. O jogo não é muito complexo, dado uma sequência aleatória de números e o tamanho X de uma subsequência você deverá descobrir apostar quantas subsequência X cabem dentro da sequência dada.
+    <br />
+    <br />
+    Esse problema foi resolvido através da maior subsequência crescente de Programação Dinâmica.
+    O projeto é baseado no exercício <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1645">https://www.urionlinejudge.com.br/judge/pt/problems/view/1645</a> do URI.</p>
 
-    <button (click)="getRandomList()" *ngIf="buttonDisapear">Sortear</button>
+    <br />
+    <br />
+
+    <button mat-raised-button color="warn" (click)="getRandomList()" *ngIf="buttonDisapear">Sortear</button>
 
     <div class="sequence-box" *ngIf="!buttonDisapear">
         <span>Sequência: {{ randomList }}</span>
@@ -13,7 +20,7 @@
 
     <div class="wrap-cards" *ngIf="!buttonDisapear">
         <!-- <a (click)=""> -->
-            <mat-card class="inline-block" *ngFor="let answerValue of answersOptions">
+            <mat-card class="inline-block" *ngFor="let answerValue of answersOptions" (click)="cardSelect(answerValue)">
                 <mat-card-header>
                     <mat-card-title>Alternativa</mat-card-title>
                 </mat-card-header>

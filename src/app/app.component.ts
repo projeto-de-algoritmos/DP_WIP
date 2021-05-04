@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AnswerType } from 'src/algorithm/AnswerType';
 import { SubsequenceCalculator } from 'src/algorithm/SubsequenceCalculator';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,24 @@ export class AppComponent {
     this.answers = this.sequenceCalculator.calculateAnswers(this.randomList, this.randomSubsequenceSize);
     this.answersOptions = Object.values(this.answers);
   }
+
+  cardSelect(numberSelect: Number) {
+    if (numberSelect == this.answers.correctValue) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Parabéns!',
+        text: 'Você conseguiu acertar o total de subsequências!'
+      }).then(() => {
+        window.location.reload();
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Não foi dessa vez',
+        text: 'Você não conseguiu acertar o total de subsequências!'
+      }).then(() => {
+        window.location.reload();
+      });
+    }
+  }
 }
-
-
-
